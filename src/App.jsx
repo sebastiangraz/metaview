@@ -36,8 +36,8 @@ function App() {
         <button className="cta fadeIn">Get started</button>
         <div className="avatarWrapper">
           <Avatar videoSrc="./conf1.mp4" delay={0} />
-          <Avatar videoSrc="./conf2.mp4" delay={6} />
-          <Avatar videoSrc="./conf3.mp4" delay={12} />
+          <Avatar videoSrc="./conf2.mp4" delay={1} />
+          <Avatar videoSrc="./conf3.mp4" delay={2} />
         </div>
         <div
           className="videoFadeIn"
@@ -61,7 +61,7 @@ function App() {
             width="1800"
             height="1800"
           >
-            <source src="./ribbonanimation.mp4" type="video/mp4" />
+            <source src="./ribbonanimation-pulse.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
