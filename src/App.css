@@ -81,9 +81,15 @@
 }
 .linear-wipe {
   text-align: center;
-  background: linear-gradient(to right, #111 20%, #555 40%, #555 60%, #111 80%);
+  background: linear-gradient(
+    to right,
+    #111 20%,
+    rgba(17, 17, 17, 0.7) 40%,
+    rgba(17, 17, 17, 0.7) 60%,
+    #111 80%
+  );
   background-size: 200% auto;
-  color: #000;
+  color: transparent;
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;

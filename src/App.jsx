@@ -29,9 +29,9 @@ function App() {
       </div>
       {/* HERO */}
       <div className="hero">
-        <h1 className="linear-wipe fadeIn">
-          How ambitious companies interview
-        </h1>
+        <span className="fadeIn">
+          <h1 className="linear-wipe">How ambitious companies interview</h1>
+        </span>
         <button className="cta fadeIn">Get started</button>
         <div
           className="videoFadeIn"
