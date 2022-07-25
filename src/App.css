@@ -1,0 +1,140 @@
+.row {
+  width: 94%;
+  max-width: 1288px;
+  margin: 0 auto;
+}
+
+.nav {
+  font-size: 19px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  margin-top: 2rem;
+}
+.nav .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .row > *:first-child {
+  flex: 1;
+}
+.nav .row > *:last-child {
+  flex: 1;
+}
+
+.nav menu ul {
+  padding: 0;
+  display: flex;
+  justify-content: end;
+  gap: 1.5rem;
+  flex-direction: row;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.nav ul li.cta {
+  display: inline-block;
+  background: #111;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.hero h1 {
+  max-width: 12ch;
+  user-select: none;
+  text-align: center;
+}
+
+.hero .video {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateY(-60%) translateX(-50%);
+  height: auto;
+  width: 95%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.linear-wipe {
+  text-align: center;
+  background: linear-gradient(to right, #111 20%, #555 40%, #555 60%, #111 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+.fadeIn {
+  animation-delay: 0.4s;
+  animation: fadeIn 3s cubic-bezier(0.45, 0.12, 0.29, 0.87);
+  will-change: transform;
+}
+
+.videoFadeIn {
+  animation-delay: 0.4s;
+  animation: videoFadeIn 3s cubic-bezier(0.45, 0.12, 0.29, 0.87);
+  will-change: transform;
+}
+
+@keyframes shine {
+  to {
+    background-position: -200% center;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-0.2em);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-0em);
+    opacity: 1;
+  }
+}
+
+@keyframes videoFadeIn {
+  from {
+    transform: translateY(-0.2em) scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-0em) scale(1);
+    opacity: 1;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
