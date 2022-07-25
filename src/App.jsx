@@ -1,6 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
+import { Avatar } from "./components/Avatar";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -33,6 +34,11 @@ function App() {
           <h1 className="linear-wipe">How ambitious companies interview</h1>
         </span>
         <button className="cta fadeIn">Get started</button>
+        <div className="avatarWrapper">
+          <Avatar videoSrc="./conf1.mp4" delay={0} />
+          <Avatar videoSrc="./conf2.mp4" delay={6} />
+          <Avatar videoSrc="./conf3.mp4" delay={12} />
+        </div>
         <div
           className="videoFadeIn"
           style={{

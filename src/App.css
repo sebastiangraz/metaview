@@ -96,7 +96,15 @@
   -webkit-text-fill-color: transparent;
   animation: shine 3s linear infinite;
 }
-
+.avatarWrapper {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateY(-65%) translateX(-50%);
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
 .fadeIn {
   animation-delay: 0.4s;
   animation: fadeIn 3s cubic-bezier(0.45, 0.12, 0.29, 0.87);
